@@ -10,7 +10,7 @@ const UserSchema = new mongoose.Schema({
    
     email: {
         type: String,
-        unique: true,
+        unique: true
        
     },
     name: {
@@ -23,13 +23,14 @@ const UserSchema = new mongoose.Schema({
     },
     phone:{
         type: Number,
-        default: 0,
+        
 
     },
     age:{
         type: Number
     }
+    
 
 })
 
-module.exports = mongoose.model('hi', UserSchema)
+module.exports = mongoose.model('user', UserSchema)
