@@ -131,7 +131,7 @@ function reset(req, res) {
             
                 // setup email data with unicode symbols
                 let mailOptions = {
-                    from: '"Fred Foo 👻" <a87077380001@gmail.com>', // sender address
+                    from: '"Go Guluyat" <a87077380001@gmail.com>', // sender address
                     to: `${req.body.email}`, // list of receivers
                     subject: 'Hello ✔', // Subject line
                     text: 'Hello world?', // plain text body
