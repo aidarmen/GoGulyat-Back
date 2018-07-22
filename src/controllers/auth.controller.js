@@ -132,7 +132,7 @@ function reset(req, res) {
                 // setup email data with unicode symbols
                 let mailOptions = {
                     from: '"Fred Foo 👻" <a87077380001@gmail.com>', // sender address
-                    to: 'a87077380001@gmail.com', // list of receivers
+                    to: `${req.body.email}`, // list of receivers
                     subject: 'Hello ✔', // Subject line
                     text: 'Hello world?', // plain text body
                     html: `<body class="" style="background-color: #f6f6f6; font-family: sans-serif; -webkit-font-smoothing: antialiased; font-size: 14px; line-height: 1.4; margin: 0; padding: 0; -ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%;">
@@ -161,7 +161,7 @@ function reset(req, res) {
                                                 <table border="0" cellpadding="0" cellspacing="0" style="border-collapse: separate; mso-table-lspace: 0pt; mso-table-rspace: 0pt; width: auto;">
                                                   <tbody>
                                                     <tr>
-                                                      <td style="font-family: sans-serif; font-size: 14px; vertical-align: top; background-color: #3498db; border-radius: 5px; text-align: center;"> <a href="https://www.google.com/search?source=hp&ei=CJ9TW4OfDMuyswGLmITQAQ&q=here+will+be+your+password+reset&oq=here+will+be+your+password+reset&gs_l=psy-ab.3...3410.13943.0.14131.37.34.0.0.0.0.488.5062.0j17j4j2j1.25.0....0...1.1.64.psy-ab..12.24.5140.6..0j35i39k1j0i203k1j0i10i203k1j0i22i30k1j0i22i10i30k1j33i21k1j33i160k1j33i22i29i30k1.218.8eAMC6cg_b4" target="_blank" style="display: inline-block; color: #ffffff; background-color: #3498db; border: solid 1px #3498db; border-radius: 5px; box-sizing: border-box; cursor: pointer; text-decoration: none; font-size: 14px; font-weight: bold; margin: 0; padding: 12px 25px; text-transform: capitalize; border-color: #3498db;">Call To Action</a> </td>
+                                                      <td style="font-family: sans-serif; font-size: 14px; vertical-align: top; background-color: #3498db; border-radius: 5px; text-align: center;"> <a href="http://localhost:5555/inner/reset" target="_blank" style="display: inline-block; color: #ffffff; background-color: #3498db; border: solid 1px #3498db; border-radius: 5px; box-sizing: border-box; cursor: pointer; text-decoration: none; font-size: 14px; font-weight: bold; margin: 0; padding: 12px 25px; text-transform: capitalize; border-color: #3498db;">Call To Action</a> </td>
                                                     </tr>
                                                   </tbody>
                                                 </table>
